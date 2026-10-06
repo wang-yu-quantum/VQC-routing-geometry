@@ -1,11 +1,9 @@
 # VQC Routing Geometry
 
-Figures and statistics for **When Expressivity Is Not Enough: Discrete
+Code and data for **When Expressivity Is Not Enough: Discrete
 Routing Geometry in Variational Quantum Circuits**, by Yu Wang.
 
-This package uses frozen results. No optimization runs are needed.
-
-## Run
+## Reproduce figures
 
 Verified on Linux with Python 3.12. On Windows, use WSL.
 
@@ -15,6 +13,11 @@ python reproduce.py
 ```
 
 Outputs: `build/figures/`, `build/statistics/`, and `build/checks.json`.
+This command uses frozen data without rerunning optimization.
+
+## Run experiments
+
+See [`experiments/README.md`](experiments/README.md) for data-generation commands.
 
 ## Figures
 
@@ -35,6 +38,7 @@ PDF bytes may vary with fonts and platform.
 ## Files
 
 - `data/`: frozen inputs and provenance.
+- `experiments/`: simulation source, configuration, and tests.
 - `plots/`: plotting and statistics.
 - `reference/`: original figures and comparison tables.
 - `tests/`: reproduction checks.
@@ -50,4 +54,6 @@ Reproduction compares four tables at `atol=1e-12`, `rtol=1e-10` and checks
 release hashes before and after running. All saved routing instances are
 retained, including optimizer failures.
 
-Code and data licensing is pending the author's decision.
+## License
+
+No license has been assigned.

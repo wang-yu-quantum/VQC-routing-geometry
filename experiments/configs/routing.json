@@ -1,0 +1,74 @@
+{
+  "task": {
+    "hamiltonian": "open-boundary 1D transverse-field Ising model",
+    "J": 1.0,
+    "h": 1.0,
+    "sizes": [
+      4,
+      6,
+      8
+    ],
+    "simulation": "noiseless statevector"
+  },
+  "ansatz": {
+    "form": "L2 C(A2) L1 C(A1) L0",
+    "local_layer": "Rx-Ry-Rz on every qubit",
+    "routing_blocks": 2,
+    "cnot_slots_per_block": "n/2",
+    "parameter_count": "9n"
+  },
+  "sampling": {
+    "routing_families": [
+      "line_brickwork",
+      "ring",
+      "random_fixed_budget",
+      "repeated_dimer",
+      "matched_cut_budget"
+    ],
+    "routings_per_family_per_size": 4,
+    "initializations_per_routing": 3,
+    "instances_total": 180,
+    "matched_control": "Exact match of scalar cumulative contiguous-cut budget to paired random routing"
+  },
+  "optimizer": {
+    "adam_steps": 120,
+    "adam_learning_rate": 0.035,
+    "adam_cosine_decay": true,
+    "lbfgsb_maxiter": 300,
+    "gtol": 1e-09,
+    "ftol": 1e-13,
+    "maxls": 40
+  },
+  "rank_tolerance_relative": 1e-10,
+  "events": {
+    "relaxed": {
+      "parameter_gradient_max": 1e-05,
+      "ambient_gradient_min": 0.001,
+      "chi_ratio_max": 0.01,
+      "energy_error_min": 0.001
+    },
+    "primary": {
+      "parameter_gradient_max": 1e-06,
+      "ambient_gradient_min": 0.01,
+      "chi_ratio_max": 0.001,
+      "energy_error_min": 0.01
+    },
+    "strict": {
+      "parameter_gradient_max": 1e-07,
+      "ambient_gradient_min": 0.05,
+      "chi_ratio_max": 0.0001,
+      "energy_error_min": 0.05
+    }
+  },
+  "statistics": {
+    "primary_unit": "routing x initialization",
+    "cluster": "routing",
+    "cluster_bootstrap_samples": 4000,
+    "confidence_level": 0.95,
+    "wilson_interval": true,
+    "correlations": "exploratory Spearman, stratified by n"
+  },
+  "experiment": "tfim_routing_near_stagnation_genericity_pilot",
+  "status": "configured",
+  "execution": {}
+}
