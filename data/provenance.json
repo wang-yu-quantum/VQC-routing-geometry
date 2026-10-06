@@ -1,0 +1,179 @@
+{
+  "source_repository": "https://github.com/wang-yu-quantum/VQC-routing-geometry",
+  "source_commit": "0574bcc981788d6527ebb100ae7f661a2ab8a575",
+  "inputs": {
+    "data/bell/results.csv": {
+      "source": "bell_floor_state_metric.csv",
+      "sha256": "e0bf461893dc59a2503504b77670ab924f0c6aa6a84df3d6916b892847146e82"
+    },
+    "data/controlled/candidates.csv": {
+      "source": "multiblock_stagnation_candidates.csv",
+      "sha256": "0b389c5fc482047bd00d8cf223ba8a781a9479dddea36cb641b6586dc17b8cdd"
+    },
+    "data/controlled/results.csv": {
+      "source": "multiblock_stagnation_results.csv",
+      "sha256": "9861b43890e495778dc826f356cce0721eaab51fe6067420ebf3161220320280"
+    },
+    "data/controlled/traces.npz": {
+      "source": "VQC/routing_geometry/outputs/multiblock_stagnation_traces.npz",
+      "sha256": "7f32340621cb939e263cd3e671f82e57def0b9fe87570edadb2de0c22635e161"
+    },
+    "data/tfim/results.csv": {
+      "source": "natural_hamiltonian_results.csv",
+      "sha256": "52d60810403acfb7bb062192548af437f959c5031e40c88b34c1912b995eaaf5"
+    },
+    "data/tfim/candidates.csv": {
+      "source": "natural_hamiltonian_candidates.csv",
+      "sha256": "82d0dbf4650fb8b408e8c38323751ddabfc57ab672ff92014a792722aada4f27"
+    },
+    "data/tfim/summary.json": {
+      "source": "natural_hamiltonian_manifest.json",
+      "source_sha256": "cc59601f8915d14fe911c0b2ae8964b803a74a1dbb6720e257dc314756c60c09",
+      "sha256": "3f452bad20f7f50847ef435bae4b4b5e8552398884a0ff6702fb31de7c656a4c",
+      "transformation": "Omit historical output index."
+    },
+    "data/tfim/traces.npz": {
+      "source": "VQC/routing_geometry/outputs/natural_hamiltonian_traces.npz",
+      "sha256": "017784b79d81e966e62225c7e013fc59d74423da9b1fa731a387e5dca88baa3c"
+    },
+    "data/heisenberg/checkpoints.csv": {
+      "source": "xxz_checkpoints.csv",
+      "sha256": "8db2c67465a32582d9fa61a30ab4b36145cb156c431d012613834c080f00fa0f"
+    },
+    "data/heisenberg/candidates.csv": {
+      "source": "xxz_candidates.csv",
+      "sha256": "6b820b24be2c882b7a6db53e463b3b00a3088acd1be4152f2e23d471dbed4895"
+    },
+    "data/heisenberg/methods.csv": {
+      "source": "xxz_method_results.csv",
+      "sha256": "925a5211dcab590e0c0ec30490f86472bd2af0099a5a887c35295d64394992c2"
+    },
+    "data/heisenberg/traces.npz": {
+      "source": "xxz_traces.npz",
+      "sha256": "559cd126bdb1d19e2049348fd79bb918aa70acc32490d689559fa6a1b57e867e"
+    },
+    "data/routing/results.csv": {
+      "source": "stagnation_genericity_results.csv",
+      "sha256": "ac6ac9b6cb05f6de0c6ae3b0ad315314f918ff580bcd96eee8dcb312b282a194"
+    },
+    "reference/tables/multiblock_instance_correlations.csv": {
+      "source": "multiblock_instance_correlations.csv",
+      "sha256": "b8c968733e256e016ab82ae81904df60a3a30c7a91c72ab1482b0ccc22a783da"
+    },
+    "reference/tables/multiblock_paired_comparisons.csv": {
+      "source": "multiblock_paired_comparisons.csv",
+      "sha256": "45670a7b668078c702b93aecb47c5b863dea0e4c9ca3858b5588536c57df54e3"
+    },
+    "reference/tables/multiblock_random_resampling.csv": {
+      "source": "multiblock_random_resampling.csv",
+      "sha256": "c88fbf2acbe8d50b67d76a4d81e708b264f74ca3579101ec7347fdddaa7a6f3d"
+    },
+    "reference/tables/xxz_integration_statistics.csv": {
+      "source": "xxz_integration_statistics.csv",
+      "sha256": "aae224d26c33b3197438ae23600b0fe2d9204a0c34254194dbb90aa2ff90f81f"
+    },
+    "reference/figures/fig_bell_floor.pdf": {
+      "source": "figures/fig_bell_floor.pdf",
+      "sha256": "feaff46b43c3b52515f3cfe70237c2d72b3f005f1aac9c5d0c6a61df3f0a088e"
+    },
+    "reference/figures/fig_multiblock_stagnation_v2.pdf": {
+      "source": "figures/fig_multiblock_stagnation_v2.pdf",
+      "sha256": "d0152fb6cde20b8db4cac8a510ba364ee91c85b7104cd7bfcb1d237ac3f9742a"
+    },
+    "reference/figures/fig_multiblock_rank_detail.pdf": {
+      "source": "figures/fig_multiblock_rank_detail.pdf",
+      "sha256": "0e3b2bd9121300f7e4c7dce0b761b226dbb1d13bb7096264a4136d47c157ea8a"
+    },
+    "reference/figures/fig_natural_hamiltonian_intervention.pdf": {
+      "source": "figures/fig_natural_hamiltonian_intervention.pdf",
+      "sha256": "fc807c5f2bb73b97530378e5ba60a89360eaf046f8616cc5e84684731dbf6cb3"
+    },
+    "reference/figures/fig_xxz_recovery_pilot.pdf": {
+      "source": "fig_xxz_recovery_pilot.pdf",
+      "sha256": "ff6aa8bce5740550bd22fa52516a7b79ef403af58c3be3ba05b80870b0f69e34"
+    },
+    "reference/figures/fig_stagnation_genericity_distribution.pdf": {
+      "source": "fig_stagnation_genericity_distribution.pdf",
+      "sha256": "dbd3fc56cb9727124904ec5a83da309f9551c79b77196221d4a533fa4210ce5b"
+    },
+    "reference/figures/fig1_same_point_repair.png": {
+      "source": "assets/fig1_same_point_repair.png",
+      "sha256": "ccf215df9b032a6c3f117d974e90f133dc3921e3c7990329c666cbc69199207e"
+    },
+    "reference/figures/fig_shallow_cut_budget.pdf": {
+      "source": "assets/fig_shallow_cut_budget.pdf",
+      "sha256": "7ad04f792c562f3c5950cd5f7674d80ca4025b76bfd3c27bfb8f6681c9db36f7"
+    }
+  },
+  "routing_protocol": {
+    "task": {
+      "hamiltonian": "open-boundary 1D transverse-field Ising model",
+      "J": 1.0,
+      "h": 1.0,
+      "sizes": [
+        4,
+        6,
+        8
+      ],
+      "simulation": "noiseless statevector"
+    },
+    "ansatz": {
+      "form": "L2 C(A2) L1 C(A1) L0",
+      "local_layer": "Rx-Ry-Rz on every qubit",
+      "routing_blocks": 2,
+      "cnot_slots_per_block": "n/2",
+      "parameter_count": "9n"
+    },
+    "sampling": {
+      "routing_families": [
+        "line_brickwork",
+        "ring",
+        "random_fixed_budget",
+        "repeated_dimer",
+        "matched_cut_budget"
+      ],
+      "routings_per_family_per_size": 4,
+      "initializations_per_routing": 3,
+      "instances_total": 180,
+      "matched_control": "Exact match of scalar cumulative contiguous-cut budget to paired random routing"
+    },
+    "optimizer": {
+      "adam_steps": 120,
+      "adam_learning_rate": 0.035,
+      "adam_cosine_decay": true,
+      "lbfgsb_maxiter": 300,
+      "gtol": 1e-09,
+      "ftol": 1e-13,
+      "maxls": 40
+    },
+    "rank_tolerance_relative": 1e-10,
+    "events": {
+      "relaxed": {
+        "parameter_gradient_max": 1e-05,
+        "ambient_gradient_min": 0.001,
+        "chi_ratio_max": 0.01,
+        "energy_error_min": 0.001
+      },
+      "primary": {
+        "parameter_gradient_max": 1e-06,
+        "ambient_gradient_min": 0.01,
+        "chi_ratio_max": 0.001,
+        "energy_error_min": 0.01
+      },
+      "strict": {
+        "parameter_gradient_max": 1e-07,
+        "ambient_gradient_min": 0.05,
+        "chi_ratio_max": 0.0001,
+        "energy_error_min": 0.05
+      }
+    },
+    "statistics": {
+      "primary_unit": "routing x initialization",
+      "cluster": "routing",
+      "cluster_bootstrap_samples": 4000,
+      "confidence_level": 0.95,
+      "wilson_interval": true,
+      "correlations": "exploratory Spearman, stratified by n"
+    }
+  }
+}

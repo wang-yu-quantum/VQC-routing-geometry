@@ -1,0 +1,671 @@
+{
+  "experiment": "natural_hamiltonian_same_point_intervention",
+  "task": {
+    "family": "1D open-boundary transverse-field Ising model",
+    "coupling_J": 1.0,
+    "transverse_field_h": 1.0,
+    "sizes": [
+      4,
+      6,
+      8
+    ]
+  },
+  "old_ansatz": {
+    "blocks": 2,
+    "routing": "repeated disjoint dimers",
+    "local_layer": "Rx-Ry-Rz on every qubit"
+  },
+  "candidate_protocol": {
+    "pool_size_nonidentity": 16,
+    "cnot_slots": 4,
+    "gadget_cnot_count": 8,
+    "parameters_added": "3n",
+    "intervention_steps": 50,
+    "random_draws_per_instance": 1000,
+    "candidate_generation_uses_ground_state": false
+  },
+  "instances": [
+    {
+      "instance": "tfim_n4_t2_s20264723",
+      "seed": 20264723,
+      "n": 4,
+      "t": 2,
+      "ground_energy": -4.758770483143628,
+      "old_energy": -4.532952096412178,
+      "old_energy_error": 0.22581838673145072,
+      "old_ambient_norm": 1.1631581216414282,
+      "old_projected_norm": 5.936947473754275e-14,
+      "old_chi": 2.605246962816747e-27,
+      "old_parameter_gradient_norm": 4.345216123552907e-14,
+      "old_state_distance_from_zero": 1.3409864255222212,
+      "oracle_gain_50": 0.22523745561321284,
+      "random_mean_gain_50": 0.162734290820531,
+      "random_near_oracle_probability": 0.447,
+      "selectors": {
+        "identity": 0,
+        "osr_only": 12,
+        "pauli_only": 15,
+        "projection": 15,
+        "oracle": 13
+      },
+      "diagnostic_pair": [
+        8,
+        11
+      ],
+      "diagnostic_pair_log10_pauli_gap": 0.0,
+      "maximum_same_state_error": 0.0,
+      "maximum_same_energy_error": 0.0,
+      "maximum_same_old_gradient_error": 0.0,
+      "maximum_same_ambient_error": 0.0,
+      "optimizer": {
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "iterations": 0,
+        "function_evaluations": 1,
+        "final_gradient_norm": 4.345216123552907e-14,
+        "warmup_final_energy": -4.532952096412178
+      }
+    },
+    {
+      "instance": "tfim_n4_t2_s20264760",
+      "seed": 20264760,
+      "n": 4,
+      "t": 2,
+      "ground_energy": -4.758770483143639,
+      "old_energy": -4.532952096412184,
+      "old_energy_error": 0.22581838673145516,
+      "old_ambient_norm": 1.163158121641539,
+      "old_projected_norm": 7.198095971411167e-14,
+      "old_chi": 3.8296382361079664e-27,
+      "old_parameter_gradient_norm": 4.954103189343429e-14,
+      "old_state_distance_from_zero": 0.8287143094618568,
+      "oracle_gain_50": 0.2250617323974664,
+      "random_mean_gain_50": 0.12097255717193467,
+      "random_near_oracle_probability": 0.523,
+      "selectors": {
+        "identity": 0,
+        "osr_only": 7,
+        "pauli_only": 7,
+        "projection": 7,
+        "oracle": 7
+      },
+      "diagnostic_pair": [
+        8,
+        15
+      ],
+      "diagnostic_pair_log10_pauli_gap": 0.0,
+      "maximum_same_state_error": 0.0,
+      "maximum_same_energy_error": 0.0,
+      "maximum_same_old_gradient_error": 0.0,
+      "maximum_same_ambient_error": 0.0,
+      "optimizer": {
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "iterations": 0,
+        "function_evaluations": 1,
+        "final_gradient_norm": 4.954103189343429e-14,
+        "warmup_final_energy": -4.532952096412184
+      }
+    },
+    {
+      "instance": "tfim_n4_t2_s20264797",
+      "seed": 20264797,
+      "n": 4,
+      "t": 2,
+      "ground_energy": -4.7587704831436435,
+      "old_energy": -4.532952096412179,
+      "old_energy_error": 0.22581838673146404,
+      "old_ambient_norm": 1.1631581216414981,
+      "old_projected_norm": 7.458539923601266e-14,
+      "old_chi": 4.111782393420896e-27,
+      "old_parameter_gradient_norm": 5.3493543252626104e-14,
+      "old_state_distance_from_zero": 0.8249832648459222,
+      "oracle_gain_50": 0.22524090194990176,
+      "random_mean_gain_50": 0.13210188171692078,
+      "random_near_oracle_probability": 0.428,
+      "selectors": {
+        "identity": 0,
+        "osr_only": 3,
+        "pauli_only": 8,
+        "projection": 8,
+        "oracle": 14
+      },
+      "diagnostic_pair": [
+        2,
+        15
+      ],
+      "diagnostic_pair_log10_pauli_gap": 9.325873406851315e-15,
+      "maximum_same_state_error": 0.0,
+      "maximum_same_energy_error": 0.0,
+      "maximum_same_old_gradient_error": 0.0,
+      "maximum_same_ambient_error": 0.0,
+      "optimizer": {
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "iterations": 0,
+        "function_evaluations": 1,
+        "final_gradient_norm": 5.3493543252626104e-14,
+        "warmup_final_energy": -4.532952096412179
+      }
+    },
+    {
+      "instance": "tfim_n4_t2_s20264834",
+      "seed": 20264834,
+      "n": 4,
+      "t": 2,
+      "ground_energy": -4.758770483143633,
+      "old_energy": -4.532952096412182,
+      "old_energy_error": 0.22581838673145072,
+      "old_ambient_norm": 1.163158121641498,
+      "old_projected_norm": 8.921124887169844e-14,
+      "old_chi": 5.882497121430738e-27,
+      "old_parameter_gradient_norm": 6.212127312934015e-14,
+      "old_state_distance_from_zero": 0.8209616972726905,
+      "oracle_gain_50": 0.22514639479339582,
+      "random_mean_gain_50": 0.12458862670474054,
+      "random_near_oracle_probability": 0.518,
+      "selectors": {
+        "identity": 0,
+        "osr_only": 1,
+        "pauli_only": 13,
+        "projection": 13,
+        "oracle": 6
+      },
+      "diagnostic_pair": [
+        2,
+        15
+      ],
+      "diagnostic_pair_log10_pauli_gap": 2.445688096486265e-11,
+      "maximum_same_state_error": 0.0,
+      "maximum_same_energy_error": 0.0,
+      "maximum_same_old_gradient_error": 0.0,
+      "maximum_same_ambient_error": 0.0,
+      "optimizer": {
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "iterations": 0,
+        "function_evaluations": 1,
+        "final_gradient_norm": 6.212127312934015e-14,
+        "warmup_final_energy": -4.532952096412182
+      }
+    },
+    {
+      "instance": "tfim_n4_t2_s20264871",
+      "seed": 20264871,
+      "n": 4,
+      "t": 2,
+      "ground_energy": -4.7587704831436355,
+      "old_energy": -4.532952096412177,
+      "old_energy_error": 0.2258183867314587,
+      "old_ambient_norm": 1.1631581216414009,
+      "old_projected_norm": 9.46256365758918e-14,
+      "old_chi": 6.618203445937948e-27,
+      "old_parameter_gradient_norm": 6.463059329899267e-14,
+      "old_state_distance_from_zero": 0.8282240132948157,
+      "oracle_gain_50": 0.21847235343435045,
+      "random_mean_gain_50": 0.11796973367191527,
+      "random_near_oracle_probability": 0.298,
+      "selectors": {
+        "identity": 0,
+        "osr_only": 4,
+        "pauli_only": 12,
+        "projection": 12,
+        "oracle": 13
+      },
+      "diagnostic_pair": [
+        1,
+        5
+      ],
+      "diagnostic_pair_log10_pauli_gap": 2.2456703163697966e-11,
+      "maximum_same_state_error": 0.0,
+      "maximum_same_energy_error": 0.0,
+      "maximum_same_old_gradient_error": 0.0,
+      "maximum_same_ambient_error": 0.0,
+      "optimizer": {
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "iterations": 0,
+        "function_evaluations": 1,
+        "final_gradient_norm": 6.463059329899267e-14,
+        "warmup_final_energy": -4.532952096412177
+      }
+    },
+    {
+      "instance": "tfim_n6_t2_s20266723",
+      "seed": 20266723,
+      "n": 6,
+      "t": 2,
+      "ground_energy": -7.296229810558754,
+      "old_energy": -7.030340347596626,
+      "old_energy_error": 0.2658894629621278,
+      "old_ambient_norm": 1.130193928950794,
+      "old_projected_norm": 1.2458313798271755e-13,
+      "old_chi": 1.2151015954505673e-26,
+      "old_parameter_gradient_norm": 8.26072065946363e-14,
+      "old_state_distance_from_zero": 0.8483715741743644,
+      "oracle_gain_50": 0.06720485218712113,
+      "random_mean_gain_50": 0.017842349325896564,
+      "random_near_oracle_probability": 0.166,
+      "selectors": {
+        "identity": 0,
+        "osr_only": 4,
+        "pauli_only": 1,
+        "projection": 1,
+        "oracle": 13
+      },
+      "diagnostic_pair": [
+        9,
+        11
+      ],
+      "diagnostic_pair_log10_pauli_gap": 3.7275071917974856e-11,
+      "maximum_same_state_error": 0.0,
+      "maximum_same_energy_error": 0.0,
+      "maximum_same_old_gradient_error": 0.0,
+      "maximum_same_ambient_error": 0.0,
+      "optimizer": {
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "iterations": 0,
+        "function_evaluations": 1,
+        "final_gradient_norm": 8.26072065946363e-14,
+        "warmup_final_energy": -7.030340347596626
+      }
+    },
+    {
+      "instance": "tfim_n6_t2_s20266760",
+      "seed": 20266760,
+      "n": 6,
+      "t": 2,
+      "ground_energy": -7.296229810558764,
+      "old_energy": -7.030340347596616,
+      "old_energy_error": 0.2658894629621482,
+      "old_ambient_norm": 1.1301939289507628,
+      "old_projected_norm": 5.56244589279109e-14,
+      "old_chi": 2.4222873374688174e-27,
+      "old_parameter_gradient_norm": 3.843180716280277e-14,
+      "old_state_distance_from_zero": 0.8504208107204128,
+      "oracle_gain_50": 0.06701278657204579,
+      "random_mean_gain_50": 0.005364573780527458,
+      "random_near_oracle_probability": 0.066,
+      "selectors": {
+        "identity": 0,
+        "osr_only": 14,
+        "pauli_only": 11,
+        "projection": 11,
+        "oracle": 11
+      },
+      "diagnostic_pair": [
+        2,
+        10
+      ],
+      "diagnostic_pair_log10_pauli_gap": 1.3322676295501878e-15,
+      "maximum_same_state_error": 0.0,
+      "maximum_same_energy_error": 0.0,
+      "maximum_same_old_gradient_error": 0.0,
+      "maximum_same_ambient_error": 0.0,
+      "optimizer": {
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "iterations": 0,
+        "function_evaluations": 1,
+        "final_gradient_norm": 3.843180716280277e-14,
+        "warmup_final_energy": -7.030340347596616
+      }
+    },
+    {
+      "instance": "tfim_n6_t2_s20266797",
+      "seed": 20266797,
+      "n": 6,
+      "t": 2,
+      "ground_energy": -7.296229810558747,
+      "old_energy": -7.030340347596625,
+      "old_energy_error": 0.26588946296212157,
+      "old_ambient_norm": 1.1301939289508731,
+      "old_projected_norm": 2.3420311913810733e-13,
+      "old_chi": 4.294171738403428e-26,
+      "old_parameter_gradient_norm": 1.561904766563614e-13,
+      "old_state_distance_from_zero": 1.4063216577550866,
+      "oracle_gain_50": 0.09829488691875898,
+      "random_mean_gain_50": 0.01870940962675976,
+      "random_near_oracle_probability": 0.073,
+      "selectors": {
+        "identity": 0,
+        "osr_only": 6,
+        "pauli_only": 8,
+        "projection": 8,
+        "oracle": 8
+      },
+      "diagnostic_pair": [
+        3,
+        6
+      ],
+      "diagnostic_pair_log10_pauli_gap": 1.1161027657635714e-10,
+      "maximum_same_state_error": 0.0,
+      "maximum_same_energy_error": 0.0,
+      "maximum_same_old_gradient_error": 0.0,
+      "maximum_same_ambient_error": 0.0,
+      "optimizer": {
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "iterations": 0,
+        "function_evaluations": 1,
+        "final_gradient_norm": 1.561904766563614e-13,
+        "warmup_final_energy": -7.030340347596625
+      }
+    },
+    {
+      "instance": "tfim_n6_t2_s20266834",
+      "seed": 20266834,
+      "n": 6,
+      "t": 2,
+      "ground_energy": -7.296229810558761,
+      "old_energy": -7.030340347596616,
+      "old_energy_error": 0.26588946296214466,
+      "old_ambient_norm": 1.1301939289507055,
+      "old_projected_norm": 1.1035162364869174e-13,
+      "old_chi": 9.533481208134349e-27,
+      "old_parameter_gradient_norm": 7.628323748727496e-14,
+      "old_state_distance_from_zero": 0.8455274248712901,
+      "oracle_gain_50": 0.03619179516599491,
+      "random_mean_gain_50": 0.0026546623113703617,
+      "random_near_oracle_probability": 0.054,
+      "selectors": {
+        "identity": 0,
+        "osr_only": 4,
+        "pauli_only": 7,
+        "projection": 7,
+        "oracle": 7
+      },
+      "diagnostic_pair": [
+        4,
+        13
+      ],
+      "diagnostic_pair_log10_pauli_gap": 4.440892098500626e-16,
+      "maximum_same_state_error": 0.0,
+      "maximum_same_energy_error": 0.0,
+      "maximum_same_old_gradient_error": 0.0,
+      "maximum_same_ambient_error": 0.0,
+      "optimizer": {
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "iterations": 0,
+        "function_evaluations": 1,
+        "final_gradient_norm": 7.628323748727496e-14,
+        "warmup_final_energy": -7.030340347596616
+      }
+    },
+    {
+      "instance": "tfim_n6_t2_s20266871",
+      "seed": 20266871,
+      "n": 6,
+      "t": 2,
+      "ground_energy": -7.29622981055879,
+      "old_energy": -7.030340347596616,
+      "old_energy_error": 0.265889462962174,
+      "old_ambient_norm": 1.1301939289508547,
+      "old_projected_norm": 1.2148050413714327e-13,
+      "old_chi": 1.155333139903196e-26,
+      "old_parameter_gradient_norm": 8.296285662759477e-14,
+      "old_state_distance_from_zero": 1.406356201557681,
+      "oracle_gain_50": 0.06737474226506279,
+      "random_mean_gain_50": 0.014025157739161402,
+      "random_near_oracle_probability": 0.121,
+      "selectors": {
+        "identity": 0,
+        "osr_only": 5,
+        "pauli_only": 5,
+        "projection": 5,
+        "oracle": 7
+      },
+      "diagnostic_pair": [
+        1,
+        10
+      ],
+      "diagnostic_pair_log10_pauli_gap": 0.0007871575817313126,
+      "maximum_same_state_error": 0.0,
+      "maximum_same_energy_error": 0.0,
+      "maximum_same_old_gradient_error": 0.0,
+      "maximum_same_ambient_error": 0.0,
+      "optimizer": {
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "iterations": 0,
+        "function_evaluations": 1,
+        "final_gradient_norm": 8.296285662759477e-14,
+        "warmup_final_energy": -7.030340347596616
+      }
+    },
+    {
+      "instance": "tfim_n8_t2_s20268723",
+      "seed": 20268723,
+      "n": 8,
+      "t": 2,
+      "ground_energy": -9.83795144745938,
+      "old_energy": -9.543567847410962,
+      "old_energy_error": 0.2943836000484179,
+      "old_ambient_norm": 1.2575385887357604,
+      "old_projected_norm": 3.927846545818399e-13,
+      "old_chi": 9.755878507670648e-26,
+      "old_parameter_gradient_norm": 2.564837674031581e-13,
+      "old_state_distance_from_zero": 0.9103539169449065,
+      "oracle_gain_50": 0.019915649424333992,
+      "random_mean_gain_50": 0.0035786280392794047,
+      "random_near_oracle_probability": 0.06,
+      "selectors": {
+        "identity": 0,
+        "osr_only": 8,
+        "pauli_only": 6,
+        "projection": 6,
+        "oracle": 12
+      },
+      "diagnostic_pair": [
+        7,
+        11
+      ],
+      "diagnostic_pair_log10_pauli_gap": 4.880575943388976e-10,
+      "maximum_same_state_error": 0.0,
+      "maximum_same_energy_error": 0.0,
+      "maximum_same_old_gradient_error": 0.0,
+      "maximum_same_ambient_error": 0.0,
+      "optimizer": {
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "iterations": 0,
+        "function_evaluations": 1,
+        "final_gradient_norm": 2.564837674031581e-13,
+        "warmup_final_energy": -9.543567847410962
+      }
+    },
+    {
+      "instance": "tfim_n8_t2_s20268760",
+      "seed": 20268760,
+      "n": 8,
+      "t": 2,
+      "ground_energy": -9.837951447459417,
+      "old_energy": -9.543567847410973,
+      "old_energy_error": 0.29438360004844455,
+      "old_ambient_norm": 1.2575385887357549,
+      "old_projected_norm": 3.193157076449219e-13,
+      "old_chi": 6.447597586873663e-26,
+      "old_parameter_gradient_norm": 2.1176964308095814e-13,
+      "old_state_distance_from_zero": 1.4132169437142987,
+      "oracle_gain_50": 0.060051747506378206,
+      "random_mean_gain_50": 0.008593277210156243,
+      "random_near_oracle_probability": 0.062,
+      "selectors": {
+        "identity": 0,
+        "osr_only": 9,
+        "pauli_only": 8,
+        "projection": 8,
+        "oracle": 8
+      },
+      "diagnostic_pair": [
+        12,
+        13
+      ],
+      "diagnostic_pair_log10_pauli_gap": 2.6645352591003757e-15,
+      "maximum_same_state_error": 0.0,
+      "maximum_same_energy_error": 0.0,
+      "maximum_same_old_gradient_error": 0.0,
+      "maximum_same_ambient_error": 0.0,
+      "optimizer": {
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "iterations": 0,
+        "function_evaluations": 1,
+        "final_gradient_norm": 2.1176964308095814e-13,
+        "warmup_final_energy": -9.543567847410973
+      }
+    },
+    {
+      "instance": "tfim_n8_t2_s20268797",
+      "seed": 20268797,
+      "n": 8,
+      "t": 2,
+      "ground_energy": -9.83795144745939,
+      "old_energy": -9.543567847410964,
+      "old_energy_error": 0.2943836000484268,
+      "old_ambient_norm": 1.2575385887357746,
+      "old_projected_norm": 4.196881518039253e-13,
+      "old_chi": 1.1138091372647349e-25,
+      "old_parameter_gradient_norm": 2.701688417052389e-13,
+      "old_state_distance_from_zero": 1.4132293908830118,
+      "oracle_gain_50": 0.05361204352846727,
+      "random_mean_gain_50": 0.004158092900696717,
+      "random_near_oracle_probability": 0.064,
+      "selectors": {
+        "identity": 0,
+        "osr_only": 2,
+        "pauli_only": 10,
+        "projection": 10,
+        "oracle": 10
+      },
+      "diagnostic_pair": [
+        3,
+        13
+      ],
+      "diagnostic_pair_log10_pauli_gap": 4.440892098500626e-16,
+      "maximum_same_state_error": 0.0,
+      "maximum_same_energy_error": 0.0,
+      "maximum_same_old_gradient_error": 0.0,
+      "maximum_same_ambient_error": 0.0,
+      "optimizer": {
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "iterations": 0,
+        "function_evaluations": 1,
+        "final_gradient_norm": 2.701688417052389e-13,
+        "warmup_final_energy": -9.543567847410964
+      }
+    },
+    {
+      "instance": "tfim_n8_t2_s20268834",
+      "seed": 20268834,
+      "n": 8,
+      "t": 2,
+      "ground_energy": -9.837951447459416,
+      "old_energy": -9.54356784741096,
+      "old_energy_error": 0.2943836000484552,
+      "old_ambient_norm": 1.2575385887359436,
+      "old_projected_norm": 1.8655777865436638e-13,
+      "old_chi": 2.2008177628637898e-26,
+      "old_parameter_gradient_norm": 1.2442816075746844e-13,
+      "old_state_distance_from_zero": 0.9087676622828836,
+      "oracle_gain_50": 0.02323454780638734,
+      "random_mean_gain_50": 0.0044335478155339576,
+      "random_near_oracle_probability": 0.07,
+      "selectors": {
+        "identity": 0,
+        "osr_only": 5,
+        "pauli_only": 9,
+        "projection": 9,
+        "oracle": 15
+      },
+      "diagnostic_pair": [
+        5,
+        13
+      ],
+      "diagnostic_pair_log10_pauli_gap": 8.348877145181177e-13,
+      "maximum_same_state_error": 0.0,
+      "maximum_same_energy_error": 0.0,
+      "maximum_same_old_gradient_error": 0.0,
+      "maximum_same_ambient_error": 0.0,
+      "optimizer": {
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "iterations": 0,
+        "function_evaluations": 1,
+        "final_gradient_norm": 1.2442816075746844e-13,
+        "warmup_final_energy": -9.54356784741096
+      }
+    },
+    {
+      "instance": "tfim_n8_t2_s20268871",
+      "seed": 20268871,
+      "n": 8,
+      "t": 2,
+      "ground_energy": -9.837951447459428,
+      "old_energy": -9.543567847410976,
+      "old_energy_error": 0.29438360004845165,
+      "old_ambient_norm": 1.2575385887361157,
+      "old_projected_norm": 3.8162892462501243e-13,
+      "old_chi": 9.209582142106169e-26,
+      "old_parameter_gradient_norm": 2.56582560567256e-13,
+      "old_state_distance_from_zero": 1.4132193750272002,
+      "oracle_gain_50": 0.05972557320310656,
+      "random_mean_gain_50": 0.008226845009110813,
+      "random_near_oracle_probability": 0.051,
+      "selectors": {
+        "identity": 0,
+        "osr_only": 6,
+        "pauli_only": 9,
+        "projection": 9,
+        "oracle": 9
+      },
+      "diagnostic_pair": [
+        2,
+        15
+      ],
+      "diagnostic_pair_log10_pauli_gap": 6.578382283350948e-11,
+      "maximum_same_state_error": 0.0,
+      "maximum_same_energy_error": 0.0,
+      "maximum_same_old_gradient_error": 0.0,
+      "maximum_same_ambient_error": 0.0,
+      "optimizer": {
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "iterations": 0,
+        "function_evaluations": 1,
+        "final_gradient_norm": 2.56582560567256e-13,
+        "warmup_final_energy": -9.543567847410976
+      }
+    }
+  ],
+  "gradient_check": {
+    "maximum_absolute_error": 2.4439039680856922e-09,
+    "maximum_relative_error": 1.5427603646451364e-09
+  },
+  "software": {
+    "python": "3.13.3",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "matplotlib": "3.10.3"
+  },
+  "runtime_seconds": 91.73504781723022,
+  "smoke": false
+}
